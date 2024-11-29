@@ -24,9 +24,9 @@
             const baseDatePST = new Date("2024-11-28T00:00:00-08:00");
             const daysSinceBase = calculateDaysInPST(baseDatePST, todayPST);
             const cycleLetters = ["T", "E", "M"];
-        };
             const letter = cycleLetters[(daysSinceBase % 3 + 3) % 3];
-            alert(letter);
+            document.body.innerText = letter;
+        };
     </script>
 </head>
 <body>
