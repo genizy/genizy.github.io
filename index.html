@@ -25,7 +25,7 @@
             const daysSinceBase = calculateDaysInPST(baseDatePST, todayPST);
             const cycleLetters = ["T", "E", "M"];
             const letter = cycleLetters[(daysSinceBase % 3 + 3) % 3];
-            document.body.innerText = letter;
+            document.body.innerText += "<br><br><br><br>"+letter;
         };
     </script>
 </head>
